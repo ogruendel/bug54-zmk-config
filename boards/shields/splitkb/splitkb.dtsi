@@ -7,11 +7,20 @@
         wakeup-source;
 
         row-gpios
-            = <&nice_nano_v2 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&nice_nano_v2 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&nice_nano_v2 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&nice_nano_v2 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&nice_nano_v2 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&nice_nano 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&nice_nano 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&nice_nano 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&nice_nano 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&nice_nano 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+
+        col-gpios
+            = <&nice_nano 20 GPIO_ACTIVE_HIGH>
+            , <&nice_nano 19 GPIO_ACTIVE_HIGH>
+            , <&nice_nano 18 GPIO_ACTIVE_HIGH>
+            , <&nice_nano 15 GPIO_ACTIVE_HIGH>
+            , <&nice_nano 14 GPIO_ACTIVE_HIGH>
+            , <&nice_nano 16 GPIO_ACTIVE_HIGH>
             ;
     };
 

@@ -1,9 +1,0 @@
-#include "splitkb.dtsi"
-
-&kscan0 {
-    col-gpios
-        = <&nice_nano_v2 19 GPIO_ACTIVE_HIGH>
-        , <&nice_nano_v2 18 GPIO_ACTIVE_HIGH>
-        , <&nice_nano_v2 15 GPIO_ACTIVE_HIGH>
-        ;
-};
