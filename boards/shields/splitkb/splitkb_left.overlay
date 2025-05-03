@@ -1,4 +1,4 @@
-#include "splitkb-layout.dtsi"
+#include "splitkb-layouts.dtsi"
 
 &default_kscan {
     col-gpios
