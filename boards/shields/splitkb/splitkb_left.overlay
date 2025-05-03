@@ -1,4 +1,4 @@
-#include "my_keyboard.dtsi"
+#include "splitkb-layout.dtsi"
 
 &default_kscan {
     col-gpios
