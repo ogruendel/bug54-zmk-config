@@ -1,10 +1,10 @@
 #include "splitkb-layouts.dtsi"
 
-&default_kscan {
+&kscan0 {
     col-gpios
-        = <&pro_micro 10 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 11 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 13 GPIO_ACTIVE_HIGH>
+        = <&nice_nano_v2 10 GPIO_ACTIVE_HIGH>
+        , <&nice_nano_v2 11 GPIO_ACTIVE_HIGH>
+        , <&nice_nano_v2 13 GPIO_ACTIVE_HIGH>
         ;
 };
 
