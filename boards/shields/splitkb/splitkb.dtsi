@@ -7,11 +7,11 @@
         wakeup-source;
 
         row-gpios
-            = <&nice_nano_v2 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&nice_nano_v2 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&nice_nano_v2 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&nice_nano_v2 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&nice_nano_v2 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
 
