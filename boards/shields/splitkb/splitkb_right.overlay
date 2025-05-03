@@ -1,0 +1,16 @@
+#include "splitkb.dtsi"
+
+&kscan0 {
+    col-gpios
+        = <&nice_nano 20 GPIO_ACTIVE_HIGH>
+        , <&nice_nano 19 GPIO_ACTIVE_HIGH>
+        , <&nice_nano 18 GPIO_ACTIVE_HIGH>
+        , <&nice_nano 15 GPIO_ACTIVE_HIGH>
+        , <&nice_nano 14 GPIO_ACTIVE_HIGH>
+        , <&nice_nano 16 GPIO_ACTIVE_HIGH>
+        ;
+};
+
+&default_transform {
+    col-offset = <6>;
+};

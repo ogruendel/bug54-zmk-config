@@ -13,15 +13,6 @@
             , <&nice_nano 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&nice_nano 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
-
-        col-gpios
-            = <&nice_nano 20 GPIO_ACTIVE_HIGH>
-            , <&nice_nano 19 GPIO_ACTIVE_HIGH>
-            , <&nice_nano 18 GPIO_ACTIVE_HIGH>
-            , <&nice_nano 15 GPIO_ACTIVE_HIGH>
-            , <&nice_nano 14 GPIO_ACTIVE_HIGH>
-            , <&nice_nano 16 GPIO_ACTIVE_HIGH>
-            ;
     };
 
     default_transform: keymap_transform0 {
