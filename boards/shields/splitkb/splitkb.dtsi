@@ -1,6 +1,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix_transform = &default_transform;
+    };
+
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
