@@ -1,0 +1,13 @@
+#include "my_keyboard.dtsi"
+
+&default_kscan {
+    col-gpios
+        = <&pro_micro 10 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 11 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 13 GPIO_ACTIVE_HIGH>
+        ;
+};
+
+&default_transform {
+    col-offset = <6>
+};

@@ -1,0 +1,5 @@
+config SHIELD_SPLITKB_LEFT
+    def_bool $(shields_list_contains, splitkb_left)
+
+config SHIELD_SPLITKB_RIGHT
+    def_bool $(shields_list_contains, splitkb_right)
