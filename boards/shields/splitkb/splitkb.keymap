@@ -7,21 +7,11 @@
 
         default_layer {
             bindings = <
-                &kp TAB &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0 &kp X
-                &kp ESC &kp Q &kp W &kp E &kp R &kp T &kp Z &kp U &kp I &kp O &kp P &kp X
-                &kp LSHIFT &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp X &kp X
-                &kp LCTRL &kp Y &kp X &kp C &kp V &kp B &kp N &kp M &kp KP_COMMA &kp KP_DOT &kp KP_MINUS &kp RSHIFT
-                &kp LGUI &mo 1 &kp KP_ENTER         &kp SPACE &kp LALT &kp BACKSPACE
-            >;
-        };
-
-        lower_layer {
-            bindings = <
-                &kp TAB &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0 &kp X
-                &kp ESC &kp Q &kp W &kp E &kp R &kp T &kp Z &kp U &kp I &kp O &kp P &kp X
-                &kp LSHIFT &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp X &kp X
-                &kp LCTRL &kp Y &kp X &kp C &kp V &kp B &kp N &kp M &kp KP_COMMA &kp KP_DOT &kp KP_MINUS &kp RSHIFT
-                &kp LGUI &kp 1 &kp KP_ENTER         &kp SPACE &kp LALT &kp BACKSPACE
+                &kp TAB &kp N_1 &kp N_2 &kp N_3 &kp N_4 &kp N_5 &kp N_6 &kp N_7 &kp N_8 &kp N_9 &kp N_0 &kp X
+                &kp ESC &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LEFT_BRACKET
+                &kp LSHIFT &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON &kp SINGLE_QUOTE
+                &kp LCTRL &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp KP_COMMA &kp KP_DOT &kp KP_MINUS &kp RSHIFT
+                &kp LGUI &mo 1 &kp ENTER         &kp SPACE &kp LALT &kp BACKSPACE
             >;
         };
     };
