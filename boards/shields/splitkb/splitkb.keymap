@@ -1,5 +1,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+#define SYMBOLS 1
 
 / {
     keymap {
@@ -7,11 +10,27 @@
 
         default_layer {
             bindings = <
-                &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp X
+                &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS
                 &kp ESC &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LEFT_BRACKET
                 &kp LSHIFT &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON &kp SINGLE_QUOTE
-                &kp LCTRL &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp KP_COMMA &kp KP_DOT &kp KP_MINUS &kp RSHIFT
-                &kp LGUI &mo 1 &kp ENTER         &kp SPACE &kp LALT &kp BACKSPACE
+                &kp LCTRL &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
+                &kp LGUI &mo SYMBOLS &kp ENTER         &kp SPACE &kp LALT &kp BACKSPACE
+            >;
+        };
+
+        symbols_layer {
+            //-----------------------------------------------------------------------------------------------
+            // BTCLR|  BT 1 |  BT 2 |  BT 3 |  BT 4 |  BT 5 |       |       |   <   |   >   |       |       |
+            //      |   @   |       |       |       |       |       |       |   {   |   }   |       |       |
+            //      |       |       |       |       |       |       |       |   (   |   )   |       |       |
+            //      |       |       |       |       |       |       |       |   [   |   ]   |       |       |
+
+            bindings = <
+                &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &trans &trans &kp LT &kp GT &trans &trans
+                &trans &kp AT &trans &trans &trans &trans &trans &trans &kp LBRC &kp RBRC &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &kp LPAR &kp RPAR &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &kp LBKT &kp RBKT &trans &trans
+                &trans &trans &trans                                    &trans &trans &trans 
             >;
         };
     };
