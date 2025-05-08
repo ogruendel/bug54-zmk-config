@@ -1,0 +1,11 @@
+file_format: "1"
+id: splitkb
+name: SplitKB
+type: shield
+requires:
+  - pro_micro
+features:
+  - keys
+siblings:
+  - splitkb-left
+  - splitkb-right
