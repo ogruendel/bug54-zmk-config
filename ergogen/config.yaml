@@ -1,0 +1,213 @@
+units:
+  kx: cx
+  ky: cy
+
+  px: kx + 4
+  py: ky + 4
+
+points:
+  zones:
+    matrix:
+      anchor:
+        shift: [120, -150]
+      key:
+        padding: ky
+        spread: kx
+
+      columns:
+        far:
+          key:
+            column_net: P20
+        pinky:
+          key:
+            stagger: 4
+            column_net: P19
+        ring:
+          key:
+            stagger: 4
+            splay: -5
+            origin: [0, -20]
+            column_net: P18
+        middle:
+          key:
+            stagger: 4
+            column_net: P15
+        index:
+          key:
+            stagger: -4
+            column_net: P14
+        inner:
+          key:
+            stagger: -4
+            column_net: P16
+      rows:
+        bottom:
+          row_net: P9
+        home:
+          row_net: P8
+        secondary:
+          row_net: P10
+        top:
+          row_net: P21
+    
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-22, -20]
+      key:
+        padding: 1ky
+        spread: 1kx
+      columns:
+        inner:
+          key:
+            splay: -10
+            column_net: P15
+        middle:
+          key:
+            splay: -10
+            origin: [-12, -20]
+            column_net: P14
+        outer:
+          key:
+            splay: -15
+            origin: [-12, -20]
+            column_net: P16
+      rows:
+        thumb:
+          row_net: P7
+
+outlines:
+  _board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_far_top
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_pinky_top
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_ring_top
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_middle_top
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_middle_top
+          shift: [0.5px, 0.5py]
+        - ref: matrix_index_top
+          shift: [0.5px, 0.5py]
+        - ref: matrix_inner_top
+          shift: [0.5px, 0.5py]
+        - ref: matrix_inner_top
+          shift: [1.3px, 0.5py]
+        - ref: matrix_inner_secondary
+          shift: [1.3px, -0.5py]
+        - ref: matrix_inner_secondary
+          shift: [0.5px, -1py]
+        - ref: matrix_inner_bottom
+          shift: [0.5px, -0.5py]
+        - ref: thumbfan_outer_thumb
+          shift: [0.5px, 0.5py]
+        - ref: thumbfan_outer_thumb
+          shift: [0.5px, -0.5py]
+        - ref: thumbfan_inner_thumb
+          shift: [-0.5px, -0.5py]
+        - ref: matrix_far_bottom
+          shift: [-0.5px, -0.5py]
+        
+      fillet: 2
+  
+  case:
+    - name: case
+    - operation: add
+      name: _board
+      expand: 2.5
+  
+  case_cutout:
+    - name: case_cutout
+    - operation: add
+      name: _board
+      expand: 0.5
+
+  plate:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_far_top
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_pinky_top
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_ring_top
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_middle_top
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_middle_top
+          shift: [0.5px, 0.5py]
+        - ref: matrix_index_top
+          shift: [0.5px, 0.5py]
+        - ref: matrix_inner_top
+          shift: [0.4px, 0.5py]
+        - ref: matrix_inner_secondary
+          shift: [0.4px, -0.5py]
+        - ref: matrix_inner_secondary
+          shift: [1.3px, -0.5py]
+        - ref: matrix_inner_secondary
+          shift: [0.5px, -1py]
+        - ref: matrix_inner_bottom
+          shift: [0.5px, -0.5py]
+        - ref: thumbfan_outer_thumb
+          shift: [0.5px, 0.5py]
+        - ref: thumbfan_outer_thumb
+          shift: [0.5px, -0.5py]
+        - ref: thumbfan_inner_thumb
+          shift: [-0.5px, -0.5py]
+        - ref: matrix_far_bottom
+          shift: [-0.5px, -0.5py]
+
+      fillet: 2
+    - operation: subtract
+      what: rectangle
+      where: true
+      size: [13.8, 13.8]
+pcbs:
+  main:
+    template: kicad8
+    outlines:
+      main:
+        outline: board
+    footprints:
+      choc_hotswap:
+        what: ceoloide/switch_choc_v1_v2
+        where: true
+        params:
+          hotswap: true
+          reversible: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: diode_smd_sod323
+        where: true
+        params:
+          reversible: true
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      mcu_nice_nano:
+        what: ceoloide/mcu_nice_nano
+        where:
+          ref: matrix_inner_top
+          shift: [19, -7.5]
+        params:
+          reversible: true
+
+  hotswap_cutouts_left:
+    footprints:
+      hotswap:
+        what: kailh_choc_cutout
+        where: true
+
+  hotswap_cutouts_right:
+    footprints:
+      hotswap:
+        what: kailh_choc_cutout
+        where: true
+        params:
+          reversed: true
