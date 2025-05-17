@@ -201,7 +201,7 @@ pcbs:
   hotswap_cutouts_left:
     footprints:
       hotswap:
-        what: kailh_choc_cutout_new
+        what: kailh_choc_cutout
         where: true
 
   hotswap_cutouts_right:
