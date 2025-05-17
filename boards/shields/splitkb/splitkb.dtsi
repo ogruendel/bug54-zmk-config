@@ -33,9 +33,4 @@
                                        RC(4, 3) RC(4, 4) RC(4, 5)       RC(4, 6) RC(4, 7) RC(4, 8)
         >;
     };
-
-    &physical_layout0 {
-        kscan = <&kscan0>;
-        transform = <&default_transform>;
-    };
 };
