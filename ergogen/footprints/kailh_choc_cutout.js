@@ -29,7 +29,7 @@ module.exports = {
             (fp_line (start 9.301492 -5.025) (end 7.151492 -5.025) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
             (fp_line (start 9.301492 -5.025) (end 9.301492 -2.675) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
             (fp_line (start 9.301492 -2.675) (end 7.151492 -2.675) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
-            (fp_arc (start -2.625 -3.75) (end -2.625 -4.875) (angle 90) (stroke (width 0.1) (type default)) (layer "F.SilkS"))
+            (fp_arc (start -1.5 -4.875) (end -1.5 -3.75) (angle 90) (stroke (width 0.1) (type default)) (layer "F.SilkS"))
             (fp_arc (start 1.5 -2.85) (end 1.5 -3.75) (angle 90) (stroke (width 0.1) (type default)) (layer "F.SilkS"))
             (fp_arc (start 4.019746 -8.233483) (end 4.019746 -6.200746) (angle 76.3854) (stroke (width 0.1) (type default)) (layer "F.SilkS"))
             (fp_arc (start 1.141492 -7.521992) (end 1.141492 -8.454216) (angle 75.5255) (stroke (width 0.1) (type default)) (layer "F.SilkS"))

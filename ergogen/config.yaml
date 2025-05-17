@@ -171,7 +171,7 @@ pcbs:
     template: kicad8
     outlines:
       main:
-        outline: board
+        outline: _board
     footprints:
       choc_hotswap:
         what: ceoloide/switch_choc_v1_v2
@@ -201,7 +201,7 @@ pcbs:
   hotswap_cutouts_left:
     footprints:
       hotswap:
-        what: kailh_choc_cutout
+        what: kailh_choc_cutout_new
         where: true
 
   hotswap_cutouts_right:
