@@ -118,13 +118,13 @@ outlines:
     - name: case
     - operation: add
       name: _board
-      expand: 2.5
+      expand: 2.3
   
   case_cutout:
     - name: case_cutout
     - operation: add
       name: _board
-      expand: 0.5
+      expand: 0.3
 
   plate:
     - what: polygon
