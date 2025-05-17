@@ -2,8 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define SYMBOLS 1
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -21,7 +19,7 @@
                 &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LEFT_BRACKET
                 &kp LSHIFT &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON &kp SINGLE_QUOTE
                 &kp LCTRL &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
-                &kp LGUI &mo SYMBOLS &kp ENTER &kp LALT &kp SPACE &kp BACKSPACE
+                &kp LGUI &mo 1 &kp ENTER &kp LALT &kp SPACE &kp BACKSPACE
             >;
         };
 
