@@ -1,5 +1,6 @@
 # Bug54 keyboard
 The Bug54 is a 54 key split keyboard featuring a 4x6 column staggered layout with 3 thumb keys.
+
 ![Bug54 top and bottom side](https://github.com/ogruendel/bug54-zmk-config/blob/master/docs/images/PXL_20250518_160201433.RAW-01.COVER.jpg)
 
 ## Features:
