@@ -17,6 +17,7 @@ The Bug54 is designed for NiceNano V2 and compatible microcontrollers.
 - The Silkscreen for the MCU bridge pads is wrong on the backside. You will need to bridge pads only on the top side, when viewed in KiCAD
 - My custom footprint for the hotswap case cutouts is non ideal and depending on your 3D Printer settings, the fit might be too tight / loose. For me they snap in with a bit of pressure, thus there is no need for screws
 - It might be smart to upstream the ZMK config to the ZMK repository
+- There is no on / off switch and reset button
 
 ## Images
 ![Bug54 top and bottom side](https://github.com/ogruendel/bug54-zmk-config/blob/master/docs/images/PXL_20250518_160201433.RAW-01.COVER.jpg)
