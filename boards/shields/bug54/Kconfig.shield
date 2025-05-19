@@ -1,0 +1,5 @@
+config SHIELD_BUG54_LEFT
+    def_bool $(shields_list_contains,bug54_left)
+
+config SHIELD_BUG54_RIGHT
+    def_bool $(shields_list_contains,bug54_right)

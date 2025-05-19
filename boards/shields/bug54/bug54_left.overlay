@@ -1,4 +1,4 @@
-#include "splitkb.dtsi"
+#include "bug54.dtsi"
 
 &kscan0 {
     col-gpios

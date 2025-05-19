@@ -1,15 +1,15 @@
-if SHIELD_SPLITKB_LEFT
+if SHIELD_BUG54_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "SplitKB"
+    default "Bug54"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_SPLITKB_LEFT || SHIELD_SPLITKB_RIGHT
-
+if SHIELD_BUG54_LEFT || SHIELD_BUG54_RIGHT
+    
 config ZMK_SPLIT
     default y
 

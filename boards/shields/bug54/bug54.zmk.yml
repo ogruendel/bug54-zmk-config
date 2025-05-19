@@ -1,6 +1,6 @@
 file_format: "1"
-id: splitkb
-name: SplitKB
+id: bug54
+name: Bug54
 type: shield
 requires:
   - pro_micro
@@ -8,5 +8,5 @@ features:
   - keys
   - studio
 siblings:
-  - splitkb-left
-  - splitkb-right
+  - bug54-left
+  - bug54-right

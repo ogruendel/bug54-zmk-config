@@ -1,4 +1,4 @@
-#include "splitkb-layouts.dtsi"
+#include "bug54-layouts.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
