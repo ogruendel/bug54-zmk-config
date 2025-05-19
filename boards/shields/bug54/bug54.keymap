@@ -23,19 +23,20 @@
             >;
         };
 
+        // This is my personal symbol layer for a german QWERTZ layout
         symbols_layer {
             //-----------------------------------------------------------------------------------------------
             //   F1 |   F2  |   F3  |   F4  |   F5  |   F6  |   F7  |   F8  |  F9   |  F10  |  F11  |  F12  |
-            // BT 0 |  BT 1 |       |   UP  |       |       |       |   {   |   }   |       |       | BTCLR |
-            // BT 2 |  BT 3 |  LEFT |  DOWN | RIGHT |       |       |   (   |   )   |       |       |       |
-            // BT 4 |   |   |       |   <   |   >   |       |       |   [   |   ]   |       |       |STIOULK|
+            // BT 0 |  BT 1 |  BT 2 |   UP  |       | PG_UP |  +/*  |   {   |   }   |       |       | BTCLR |
+            //      |       |  LEFT |  DOWN | RIGHT | PG_DN |  #/'  |   (   |   )   |       |       |       |
+            //      |   |   |       |   <   |   >   |       |       |   [   |   ]   |       |       |STIOULK|
             //                      |       |       |       |  RALT |       |  DEL  |
 
             bindings = <
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-                &bt BT_SEL 0 &bt BT_SEL 1 &trans &kp UP &trans &trans &trans &kp RA(N7) &kp RA(N0) &trans &trans &bt BT_CLR
-                &bt BT_SEL 2 &bt BT_SEL 3 &kp LEFT &kp DOWN &kp RIGHT &trans &trans &kp LS(N8) &kp LS(N9) &trans &trans &trans
-                &bt BT_SEL 4 &kp RA(NUBS) &trans &kp NUBS &kp LS(NUBS) &trans &trans &kp RA(N8) &kp RA(N9) &trans &trans &studio_unlock
+                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp UP &trans &kp PG_UP &kp RBKT &kp RA(N7) &kp RA(N0) &trans &trans &bt BT_CLR
+                &trans &trans &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN &kp NUHS &kp LS(N8) &kp LS(N9) &trans &trans &trans
+                &trans &kp RA(NUBS) &trans &kp NUBS &kp LS(NUBS) &trans &trans &kp RA(N8) &kp RA(N9) &trans &trans &studio_unlock
                 &trans &trans &trans                                    &kp RALT &trans &kp DEL
             >;
         };
