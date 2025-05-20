@@ -2,6 +2,7 @@ file_format: "1"
 id: bug54
 name: Bug54
 type: shield
+url: https://github.com/ogruendel/bug54-zmk-config/
 requires:
   - pro_micro
 features:
