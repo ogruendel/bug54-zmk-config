@@ -197,6 +197,15 @@ pcbs:
           shift: [19, -7.5]
         params:
           reversible: true
+      reset_button:
+        what: button_smd
+        where:
+          ref: matrix_inner_top
+          shift: [19, -26]
+        params:
+          reversible: true
+          from: GND
+          to: RST
 
   hotswap_cutouts_left:
     footprints:
