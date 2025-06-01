@@ -190,22 +190,40 @@ pcbs:
           to: "{{row_net}}"
         adjust:
           shift: [0, -5]
-      mcu_nice_nano:
-        what: ceoloide/mcu_nice_nano
+      mcu_nice_nano_v2:
+        what: nice_nano_v2
         where:
           ref: matrix_inner_top
-          shift: [19, -7.5]
+          shift: [19, -8.2]
         params:
           reversible: true
       reset_button:
         what: button_smd
         where:
           ref: matrix_inner_top
-          shift: [19, -26]
+          shift: [19, -24.5]
         params:
           reversible: true
           from: GND
           to: RST
+      battery_holes:
+        what: battery_holes
+        where:
+          ref: matrix_inner_top
+          shift: [19, -26]
+        params:
+          from: BAT+
+          to: GND
+      power_switch:
+        what: slide_switch
+        where:
+          ref: matrix_inner_home
+          shift: [18, 2.3]
+          rotate: 210.8
+        params:
+          reversible: true
+          closed: BAT+
+          com: RAW
 
   hotswap_cutouts_left:
     footprints:
