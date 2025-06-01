@@ -7,7 +7,7 @@ module.exports = {
     },
     body: p => {
         const standard_opening = `
-            (footprint "kailh_choc_hotswap_socket"
+            (footprint "button_smd"
                 (layer "${p.reversible ? 'B' : 'F'}.SilkS")
                 ${p.at}
                 (attr smd)
