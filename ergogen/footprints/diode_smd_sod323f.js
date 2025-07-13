@@ -22,8 +22,8 @@ module.exports = {
         `
 
         const front_smd_pads = `
-            (pad "1" smd roundrect (at -1.1 0 ${p.r}) (size 0.6 0.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) ${p.to.str})
-	        (pad "2" smd roundrect (at 1.1 0 ${p.r}) (size 0.6 0.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) ${p.from.str})
+            (pad "1" smd roundrect (at -1.1 0 ${p.r}) (size 0.5 0.5) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) ${p.to.str})
+	        (pad "2" smd roundrect (at 1.1 0 ${p.r}) (size 0.5 0.5) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) ${p.from.str})
         `
 
         const back_silk = `
@@ -35,8 +35,8 @@ module.exports = {
             (fp_line (start 0.473912 -0.004112) (end 0.223912 -0.004112) (stroke (width 0.05) (type solid)) (layer "B.SilkS"))
         `
         const back_smd_pads = `
-            (pad "1" smd roundrect (at -1.1 0 ${p.r}) (size 0.6 0.45) (layers "B.Cu" "B.Mask" "B.Paste") (roundrect_rratio 0.25) ${p.to.str})
-	        (pad "2" smd roundrect (at 1.1 0 ${p.r}) (size 0.6 0.45) (layers "B.Cu" "B.Mask" "B.Paste") (roundrect_rratio 0.25) ${p.from.str})
+            (pad "1" smd roundrect (at -1.1 0 ${p.r}) (size 0.5 0.5) (layers "B.Cu" "B.Mask" "B.Paste") (roundrect_rratio 0.25) ${p.to.str})
+	        (pad "2" smd roundrect (at 1.1 0 ${p.r}) (size 0.5 0.5) (layers "B.Cu" "B.Mask" "B.Paste") (roundrect_rratio 0.25) ${p.from.str})
         `
 
         const smd_connections = `
