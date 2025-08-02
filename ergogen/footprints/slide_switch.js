@@ -13,6 +13,7 @@ module.exports = {
         const standard_opening = `
         (footprint "slide_switch"
             ${p.at}
+            (attr smd)
             `
             
         const through_holes = `

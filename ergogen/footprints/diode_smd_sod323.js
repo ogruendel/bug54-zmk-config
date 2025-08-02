@@ -11,6 +11,7 @@ module.exports = {
             (footprint "diode_smd_sod323"
                 (layer "${p.reversible ? 'F' : p.side}.Cu")
                 ${p.at}
+                (attr smd)
         `
         const front_silk = `
             (fp_line (start -0.211888 -0.004112) (end -0.461888 -0.004112) (stroke (width 0.05) (type solid)) (layer "F.SilkS"))

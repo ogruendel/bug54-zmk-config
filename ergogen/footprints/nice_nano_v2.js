@@ -55,6 +55,7 @@ module.exports = {
         const standard_opening = `
         (footprint "mcu_nice_nano_v2"
             ${p.at}
+            (attr through_hole)
             `
 
         const footprint_outline = `

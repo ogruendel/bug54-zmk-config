@@ -8,6 +8,7 @@ module.exports = {
             (footprint "battery_holes"
                 (layer "F.Cu")
                 ${p.at}
+                (attr through_hole)
         `
     
         const pads = `
