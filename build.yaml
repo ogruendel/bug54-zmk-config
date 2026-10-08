@@ -20,9 +20,11 @@
 ---
 include:
   - board: nice_nano//zmk
-    shield: bug54_left
+    shield: bug54_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nice_nano//zmk
+    shield: bug54_left
   - board: nice_nano//zmk
     shield: bug54_right
   - board: nice_nano//zmk
